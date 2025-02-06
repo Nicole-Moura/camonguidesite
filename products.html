@@ -1,0 +1,541 @@
+<!doctype html>
+<html lang="en">
+
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+
+    <title>Tooplate's Little Fashion - FAQs Page</title>
+
+
+    <!-- CSS FILES -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;300;400;700;900&display=swap" rel="stylesheet">
+
+
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/bootstrap-icons.css" rel="stylesheet">
+
+
+    <link rel="stylesheet" href="css/slick.css" />
+
+
+    <link href="css/tooplate-little-fashion.css" rel="stylesheet">
+
+
+    <!--
+
+
+Tooplate 2127 Little Fashion
+
+
+https://www.tooplate.com/view/2127-little-fashion
+
+
+-->
+</head>
+
+
+<body>
+
+
+    <section class="preloader">
+        <div class="spinner">
+            <span class="sk-inner-circle"></span>
+        </div>
+    </section>
+
+
+    <main>
+
+
+        <nav class="navbar navbar-expand-lg">
+            <div class="container">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+
+                <a class="navbar-brand" href="index.html">
+                    <strong><span>Camon</span> Guide</strong>
+                </a>
+
+
+                <div class="d-lg-none">
+                    <a href="sign-in.html" class="bi-person custom-icon me-3"></a>
+
+
+                    <a href="product-detail.html" class="bi-bag custom-icon"></a>
+                </div>
+
+
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav mx-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Home</a>
+                        </li>
+
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="about.html">Materiais</a>
+                        </li>
+
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="products.html">Tutorial</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html">Contato</a>
+                        </li>
+                    </ul>
+
+
+                </div>
+            </div>
+        </nav>
+
+
+        <header class="site-header section-padding d-flex justify-content-center align-items-center">
+            <div class="container">
+                <div class="row">
+
+
+                    <div class="col-lg-10 col-12">
+                        <h1>
+                            <span class="d-block text-primary">Dicas de costura</span>
+                            <span class="d-block text-dark">Camon Guide</span>
+                        </h1>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <section class="faq section-padding">
+            <div class="container">
+                <div class="row">
+
+
+                    <div class="col-lg-8 col-12">
+                        <h2>Circuito de hardware</h2>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingTwo">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#accordionGeneralTwo" aria-expanded="false"
+                                    aria-controls="accordionGeneralTwo">
+                                    Sensor de Temperatura e Umidade:
+                                </button>
+                            </h2>
+
+
+                            <div id="collapseTemperatureHumidity" class="accordion-collapse collapse"
+                                aria-labelledby="headingTwo" data-bs-parent="#collapseTemperatureHumidity">
+
+
+                                <div class="accordion-body">
+                                    <p class="large-paragraph"><a href="https://www.tooplate.com/free-templates"
+                                            target="_blank"></a></p>
+
+                                        <p><strong>Função:</strong> Mede a temperatura e a umidade do ambiente.</p>
+                                        <p><strong>conectar:</strong> O sensor possui três pinos: VCC (alimentação), GND (terra) e DATA (sinal de saída). O pino DATA deve ser conectado a um pino digital do Arduino (geralmente o pino 2). O VCC vai ao 5V do Arduino, e o GND vai ao GND do Arduino. Esse sensor envia os dados de temperatura e umidade para o Arduino, que processa as informações.</p>
+                               
+        
+                                    <img src="images/temperatura.png"
+                                        class="kit de costura" alt="" width="200px" height="200px">
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="accordion" id="accordionGeneralHard">
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingThree">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#accordionGeneralOne" aria-expanded="true"
+                                        aria-controls="accordionGeneralThree">Sensor Ultrassônico</button>
+                                </h2>
+
+
+                                <div id="collapseUltrasonic" class="accordion-collapse collapse"
+                                    aria-labelledby="headingOne" data-bs-parent="#collapseUltrasonic">
+
+
+                                    <div class="accordion-body">
+                                        <p class="large-paragraph"><strong>Função</strong> Mede a distância entre o sensor e um objeto ou barreira, utilizando ondas sonoras.</p>
+                                        <p><strong>Como conectar:</strong> O sensor tem quatro pinos: VCC (alimentação), GND (terra), Trig (gatilho) e Echo (eco). O VCC vai ao 5V do Arduino, e o GND ao GND do Arduino. O pino Trig deve ser conectado a um pino digital do Arduino (como o pino 9), e o pino Echo a outro pino digital (como o pino 10). Quando o Arduino envia um sinal no pino Trig, o sensor emite ondas sonoras e calcula o tempo que essas ondas levam para retornar ao pino Echo, assim calculando a distância.</p>
+                                        <img src="images/ultrassonico.jpg"
+                                            class="ponto corrido" alt="" width="200px" height="200px">
+                                    </div>
+                                </div>
+                            </div>
+
+
+
+
+                            <div class="accordion-item" id="accordionGeneralHar">
+                                <h2 class="accordion-header" id="headingFour">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#accordionGeneralThree" aria-expanded="false"
+                                        aria-controls="accordionGeneralFour">
+                                        Buzzer
+                                    </button>
+                                </h2>
+
+
+                                <div id="collapseBuzzer" class="accordion-collapse collapse"
+                                    aria-labelledby="headingFour" data-bs-parent="#collapseBuzzer">
+
+
+                                    <div class="accordion-body">
+                                        <p class="large-paragraph"><strong>Função:</strong> Emite um som (ou apito) para alertar ou indicar que uma condição foi atendida (por exemplo, uma distância muito próxima ou temperatura fora de um limite).</p>
+                                        <p><strong>Como conectar:</strong>O buzzer possui dois pinos: VCC (alimentação) e GND (terra). O VCC vai ao 5V do Arduino, e o GND ao GND. O pino de sinal pode ser conectado a um pino digital do Arduino, que enviará um sinal para ativá-lo quando necessário.</p>
+                                        <img src="images/buzzer.png"
+                                            class="ponto de alinhavo" alt="" width="200px" height="200px">
+                                    </div>
+                                </div>
+                            </div>
+
+
+                        </div>
+                        <div class="accordion" id="accordionProductt">
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingFive">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#accordionProductOne" aria-expanded="true"
+                                        aria-controls="accordionProductFive">
+                                        Arduino
+                                    </button>
+                                </h2>
+
+
+                                <div id="collapseArduino" class="accordion-collapse collapse"
+                                    aria-labelledby="headingFive" data-bs-parent="#collapseArduino">
+
+
+                                    <div class="accordion-body">
+                                        <p class="large-paragraph"><strong>Função:</strong> Controla todos os componentes e processa as informações coletadas pelos sensores, tomando ações (como acionar o buzzer ou as ventoinhas) com base nos dados obtidos.</p>
+                                        <p><strong>Como conectar:</strong>O Arduino é a “cérebro” do sistema, conectando todos os componentes acima via pinos digitais e analógicos, dependendo dos requisitos dos sensores e dispositivos. Você alimenta o Arduino com uma fonte de energia, e ele comunica com os sensores e outros componentes por meio dos pinos de entrada/saída.</p>
+                                        <img src="images/arduino.jpg"
+                                            class="ponto atras" alt="" width="200px" height="200px">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingSix">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#accordionProductOneeeeee" aria-expanded="false"
+                                    aria-controls="accordionProductSix">
+                                    Ventoinha </button>
+                            </h2>
+
+
+                            <div id="accordionProductOneeeeee" class="accordion-collapse collapse"
+                                aria-labelledby="headingSix" data-bs-parent="#accordionProduct">
+                                <div class="accordion-body">
+                                    <p class="large-paragraph"><strong>Função: </strong> Ventilam o ambiente ou ajudam a controlar a temperatura, acionadas quando a temperatura medida pelo sensor atinge um valor pré-determinado.</p>
+                                    <p><strong>Como conectar:</strong>As ventoinhas normalmente precisam de uma corrente mais alta que o Arduino pode fornecer diretamente. Para isso, você pode usar um transistor (como o 2N2222) ou um relé para controlar a ventoinha. O pino de controle do transistor ou relé é conectado a um pino digital do Arduino (por exemplo, o pino 3). O transistor/relé permite que a ventoinha seja alimentada diretamente de uma fonte externa, enquanto o Arduino apenas controla a ativação.</p>
+                                    <img src="images/ventoinha.jpg" class="ponto atras" alt="" width="200px" height="200px">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingSeven">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#accordionProductOneee" aria-expanded="true"
+                                    aria-controls="accordionProductSeven">
+                                    Como interligar os componentes:
+                                </button>
+                            </h2>
+
+
+                            <div id="accordionProductOneee" class="accordion-collapse collapse"
+                                aria-labelledby="headingSeven" data-bs-parent="#accordionProduct">
+                                <div class="accordion-body">
+                                    <ul>
+                                        <li>O Arduino processa os dados de temperatura e umidade do sensor DHT e os dados de distância do sensor ultrassônico.</li>
+                                        <li>Se a temperatura ultrapassar um valor limite ou se a distância medida pelo sensor ultrassônico for muito próxima, o Arduino pode acionar o buzzer para alertar o usuário.</li>
+                                        <li>Ao mesmo tempo, se a temperatura for alta, o Arduino pode ativar as ventoinhas para resfriar o ambiente.</li>
+                                        <li>O buzzer e as ventoinhas são controlados diretamente pelo Arduino, enquanto os sensores fornecem os dados necessários para as decisões do sistema.</li>
+                                        <li>Por meio de um código no Arduino IDE, você pode programar a lógica de controle, como ativar o buzzer quando a distância for inferior a um valor pré-estabelecido ou acionar as ventoinhas quando a temperatura exceder um certo limite.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+
+                </div>
+            </div>
+        </section>
+        <section class="faq section-padding">
+            <div class="container">
+                <div class="row">
+
+
+                    <div class="col-lg-8 col-12">
+                        <h2>Costura básica</h2>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingEight">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#accordionGeneralTwo" aria-expanded="false"
+                                    aria-controls="accordionGeneralEight">
+                                    Quais sao os materiais essenciais?
+                                </button>
+                            </h2>
+
+
+                            <div id="accordionGeneralTwo" class="accordion-collapse collapse"
+                                aria-labelledby="headingTwo" data-bs-parent="#accordionGeneral">
+
+
+                                <div class="accordion-body">
+                                    <p class="large-paragraph"><a href="https://www.tooplate.com/free-templates"
+                                            target="_blank"></a><strong>Materiais:</strong></p>
+                                    <ul>
+                                        <li>Agulha para costura (Procure ter agulhas de diferentes tamanhos, agulhas
+                                            mais finas sao ideais para tecidos mais leves, enquanto as mais grossas para
+                                            tecidos mais pesados)</li>
+                                        <li>Linha para costura</li>
+                                        <li>Tesoura</li>
+                                        <li>Alfinetes</li>
+                                        <li>Dedal (Serve para proteger os dedos ao empurrar a agulha atráves do tecido)
+                                        </li>
+                                        <li>Fita métrica</li>
+                                        <li>Marcadores de tecido</li>
+                                        <li>Tecido (O tipo de tecido depende do seu projeto, algodao é utilizado para
+                                            pecas mais simples e delicadas e tecidos mais pesados para roupas e
+                                            acessorios)</li>
+                                    </ul>
+                                    <p>Exemplo de um kit de costura básica</p>
+                                    <img src="https://http2.mlstatic.com/D_NQ_NP_686567-MLB72242704339_102023-O.webp"
+                                        class="kit de costura" alt="" width="400px" height="200px">
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="accordion" id="accordionGeneral">
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingNine">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#accordionGeneralOne" aria-expanded="true"
+                                        aria-controls="accordionGeneralNine">Como fazer o ponto corrido?</button>
+                                </h2>
+
+
+                                <div id="accordionGeneralOne" class="accordion-collapse collapse"
+                                    aria-labelledby="headingOne" data-bs-parent="#accordionGeneral">
+
+
+                                    <div class="accordion-body">
+                                        <p class="large-paragraph"><strong>O ponto corrido</strong> Para fazê-lo, é
+                                            necessário enfiar a agulha no tecido e fazer uma laçada, puxando a linha até
+                                            o final do fio. Em seguida, enfiar novamente a agulha no tecido e criar
+                                            outra laçada, repetindo o processo até completar a linha desejada. Ao final,
+                                            basta dar um nó para finalizar o trabalho. O ponto corrido pode ser
+                                            utilizado em diversos tecidos, desde que a agulha e a linha sejam adequadas
+                                            à espessura e à textura do material. Ele permite um acabamento discreto e
+                                            elegante, além de ser uma opção rápida e simples para costuras mais básicas.
+                                            Com a prática, é possível aprimorar a técnica e criar desenhos mais
+                                            elaborados e detalhados.</p>
+                                        <img src="https://blog.maximustecidos.com.br/wp-content/uploads/2023/04/Composicao-1_00005-1.jpg"
+                                            class="ponto corrido" alt="" width="400px" height="200px">
+                                    </div>
+                                </div>
+                            </div>
+
+
+
+
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingTen">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#accordionGeneralThree" aria-expanded="false"
+                                        aria-controls="accordionGeneralTen">
+                                        Ponto de alinhavo, o que é?
+                                    </button>
+                                </h2>
+
+
+                                <div id="accordionGeneralThree" class="accordion-collapse collapse"
+                                    aria-labelledby="headingThree" data-bs-parent="#accordionGeneral">
+
+
+                                    <div class="accordion-body">
+                                        <p class="large-paragraph"><strong>Ponto de alinhavo</strong> é um tipo de ponto
+                                            de costura simples, utilizado principalmente para juntar duas ou mais partes
+                                            de tecido temporariamente antes de costurá-las permanentemente com uma
+                                            costura mais forte. É bastante útil para fixar as peças enquanto você
+                                            realiza a costura definitiva, garantindo que tudo fique no lugar certo.</p>
+                                        <img src="https://blog.maximustecidos.com.br/wp-content/uploads/2023/06/PONTO-ALINHAVO-COSTURA-A-MAO-2.jpg"
+                                            class="ponto de alinhavo" alt="" width="400px" height="200px">
+                                    </div>
+                                </div>
+                            </div>
+
+
+                        </div>
+                        <div class="accordion" id="accordionProduct">
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingEleven">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#accordionProductOne" aria-expanded="true"
+                                        aria-controls="accordionProductEleven">
+                                        Ponto atrás, o que é?
+                                    </button>
+                                </h2>
+
+
+                                <div id="accordionProductOne" class="accordion-collapse collapse"
+                                    aria-labelledby="headingFour" data-bs-parent="#accordionProduct">
+
+
+                                    <div class="accordion-body">
+                                        <p class="large-paragraph"><strong>Ponto atrás</strong> é um tipo de ponto de
+                                            costura manual utilizado para fazer uma costura firme e durável. Ele é muito
+                                            comum em costura à mão, especialmente para unir duas peças de tecido de
+                                            maneira resistente e permanente. Esse ponto é conhecido por sua
+                                            durabilidade, sendo ideal para áreas que precisarão de resistência, como
+                                            costuras em roupas, sapatos, bolsas, ou outros itens que exigem uma costura
+                                            forte.</p>
+                                        <img src="https://blog.maximustecidos.com.br/wp-content/uploads/2023/04/Composicao-1_00002-5.jpg"
+                                            class="ponto atras" alt="" width="400px" height="200px">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingTwelve">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#accordionProductOnee" aria-expanded="false"
+                                    aria-controls="accordionProductTwelve">
+                                    Circuito do arduino
+                                </button>
+                            </h2>
+
+
+                            <div id="accordionProductOnee" class="accordion-collapse collapse"
+                                aria-labelledby="headingFour" data-bs-parent="#accordionProduct">
+                                <div class="accordion-body">
+                                    <p class="large-paragraph"><strong>circuito do arduino</strong> carregamento solar,
+                                        um sistema de resfriamento composto por três coolers, um sistema de alarme que é
+                                        ativado caso alguém se aproxime pelas costas e um sistema de sinalização para
+                                        indicar quando a voz está sendo captada, cumprindo, assim, as diretrizes da Lei
+                                        Geral de Proteção de Dados.
+                                    </p>
+                                    <img src="images/circuito.jpg" class="ponto atras" alt="" width="400px"
+                                        height="200px">
+
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingSix">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#accordionProductTwo" aria-expanded="true"
+                                    aria-controls="accordionProductThirteen">
+                                    <iframe width="560" height="315"
+                                        src="https://www.youtube.com/embed/_Zdd3kwDOBM?si=yQx-_mjh5aqQCSmv"
+                                        title="YouTube video player" frameborder="0"
+                                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                            </h2>
+                        </div>
+                        <header class="site-header section-padding-img site-header-image">
+               
+                            <div class="container navbar-expand-lg">
+                                <video controls width="750" height="375" src="images/tutorial.mp4" type="video/quicktime" ></video>
+                            </div>
+                        </header>
+
+                    </div>
+
+
+                </div>
+
+
+            </div>
+            </div>
+        </section>
+
+
+    </main>
+
+
+    <footer class="site-footer">
+        <div class="container">
+            <div class="row">
+
+
+                <div class="col-lg-3 col-10 me-auto mb-4">
+                    <h4 class="text-white mb-3"><a href="index.html">Camon</a> Guide</h4>
+                    <p class="copyright-text text-muted mt-lg-5 mb-4 mb-lg-0">Copyright © 2022 <strong>Little
+                            Fashion</strong></p>
+                    <br>
+                    <p class="copyright-text">Designed by <a href="https://www.tooplate.com/"
+                            target="_blank">Tooplate</a></p>
+                </div>
+
+
+                <div class="col-lg-5 col-8">
+                    <h5 class="text-white mb-3">Mapa do site</h5>
+
+
+                    <ul class="footer-menu d-flex flex-wrap">
+                        <li class="footer-menu-item"><a href="about.html" class="footer-menu-link">Home</a></li>
+
+
+                        <li class="footer-menu-item"><a href="#" class="footer-menu-link">Materiais</a></li>
+
+
+                        <li class="footer-menu-item"><a href="#" class="footer-menu-link">Tutorial</a></li>
+
+
+                        <li class="footer-menu-item"><a href="#" class="footer-menu-link">Contato</a></li>
+                    </ul>
+                </div>
+
+
+                <div class="col-lg-3 col-4">
+                    <h5 class="text-white mb-3">Social</h5>
+                    <ul class="footer-menu d-flex flex-wrap">
+                        <li class="footer-menu-item"><a href="products.html" class="footer-menu-link">@moura.nii</a></li>
+                    </ul>
+
+
+                </div>
+
+
+            </div>
+        </div>
+    </footer>
+
+
+    <!-- JAVASCRIPT FILES -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/Headroom.js"></script>
+    <script src="js/jQuery.headroom.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="js/custom.js"></script>
+
+
+</body>
+
+
+</html>
